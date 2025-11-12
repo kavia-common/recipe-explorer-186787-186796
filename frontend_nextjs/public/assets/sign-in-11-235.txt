@@ -1,0 +1,164 @@
+Screen: Sign In (figma_id: 11:235)
+Screen size: 375 x 812
+Background: solid var(--color-ffffff)
+
+Design system: design_system_b2c-186787-2rgWBy4Id4svtXxdRtn3Dr.json
+- Colors: map to CSS variables --color-*
+- Typography: map to --typo-*-* variables
+- Styles: map to CSS classes and variables for background, border, radius, shadows, opacity
+- Shadows (e.g., shadow_0..10) to CSS box-shadow tokens
+
+Root container (FRAME)
+- id 11:235, style_ref: style_10 (background: color_ffffff, border_radius 30)
+- dimensions (x: 426, y: -430, w: 375, h: 812)
+- Web container: position: relative; width: 375px; height: 812px; overflow: hidden; background var(--color-ffffff); border-radius: 30px
+
+Coordinate transformation
+- Root origin = (426, -430)
+- child_left = child.x - 426
+- child_top = child.y - (-430) = child.y + 430
+- All positions are positive due to subtraction from root origin
+
+Elements (in YAML order with calculated positions relative to root and z-order incrementally):
+
+1) Group "Titttle" (id 13:110)
+- dims: (456, -336, 155, 75)
+- left: 456-426=30; top: -336+430=94
+- Contains 2 texts:
+  a) Hello, (id 12:29)
+     dims: (456, -336, 84,45) => left: 30, top: 94
+     style_ref: style_3 (bg color_000000 not applied for text background)
+     typography_ref: typo_60 → Poppins 30px 600 lh 45 color var(--color-000000)
+     Text: "Hello,"
+  b) Welcome Back! (id 12:30)
+     dims: (456, -291, 155,30) => left: 30, top: 139
+     style_ref: style_18 (bg color_121212 not used as background)
+     typography_ref: typo_61 → Poppins 20px 400 lh30 color var(--color-121212)
+     Text: "Welcome Back!"
+
+2) Input field (component instance) Email (id 30:585)
+- dims: (456, -204, 315, 81) => left: 30, top: 226
+- Children:
+  a) Rectangle 6 (I30:585;30:298): (456, -178, 315, 55) => left:30, top:252
+     style_ref: style_30 (border color var(--color-d9d9d9), width 1.5, radius 10)
+  b) Placeholder (I30:585;30:300): (476, -159, 61,17) => left:50, top:271
+     style_ref: style_29; typography_ref: typo_65 (Poppins 11/16.5 color var(--color-d9d9d9))
+     Text: "Enter Email"
+  c) Label (I30:585;30:301): (456, -204, 38,21) => left:30, top:226
+     style_ref: style_18; typography_ref: typo_66 (Poppins 14/21 color var(--color-121212))
+     Text: "Email"
+
+3) Input field (component instance) Password (id 30:590)
+- dims: (456, -93, 315,81) => left:30, top:337
+- Children:
+  a) Rectangle 6: (456, -67, 315,55) => left:30, top:363
+     style_ref: style_30 (same border)
+  b) Placeholder: (476, -48, 84,17) => left:50, top:382
+     typography_ref: typo_65 (grey) text: "Enter Password"
+  c) Label: (456, -93, 107,21) => left:30, top:337
+     typography_ref: typo_66 text: "Enter Password"
+
+4) Line group (id 12:139)
+- dims: (516, 130, 195,17) => left:90, top:560
+- Children:
+  a) Line 6 (id 12:141) dims (661, 139, 50,0) => left: 661-426=235, top: 139+430=569 relative to root, but relative to group:
+     parent (516,130): left = 661-516 = 145; top = 139-130 = 9
+     style_ref: style_28 → border 1px color var(--color-d9d9d9). Render as 1px horizontal line width 50px, height 1px.
+  b) Line 5: dims (516,139,50,0) => left: 0; top: 9; style_28
+  c) Or Sign in With (text): dims (573,130,81,17) => left: 573-516=57; top: 0
+     typography_ref: typo_64 (Poppins 11/16.5 color var(--color-d9d9d9))
+     Text "Or Sign in With"
+
+5) Social Buttons:
+- Button (id 13:35) at (557,167,44,44) => left:131, top:597
+  children:
+  a) Rectangle 642 (rect) at (557,167,44,44): left 131 top 597 style_ref: style_126 (bg var(--color-ffffff), radius 10, shadow shadow_0)
+     imagePath provided: /assets/figmaimages/figma_image_13_36_33a0897e.svg (use as background? It's a rectangle; keep as styled div, ignore SVG here; the SVG is likely a container representation - we won't use image for rectangle.)
+  b) icons8-google component (24x24) at (567,177): relative left: 10; top:10 within button
+     children vectors:
+       - Vector (id 13:39) 19.999996 size at (569,179): left within component: 2; top:2; imagePath figma_image_13_39_ffad8cec.svg
+       - Vector (id 13:40) no imagePath (we skip rendering as there is no asset; color filled via style ref would require vector path; not available)
+       - Vector (id 13:41) same
+       - Vector (id 13:42) imagePath figma_image_13_42_83962b79.svg at (579,187): left within component: 12; top:10
+     We will render the component container and place the SVGs that have imagePath to approximate the Google icon; maintain precise positions.
+
+- Button (id 13:49) at (626,167,44,44) => left:200, top:597
+  children:
+  a) Rectangle 642 at same dims: styled div with style_126
+  b) vuesax/bold/facebook group (24,24) at (636,177): relative 10,10
+     children:
+     - BG 111 (icon) 24x24 at (636,177) opacity style_25 (0.58) – will likely be background shape; without image we can create a div as a base; but as icon type with no image, we will render a transparent div to preserve layout.
+     - Vector (id 13:61) 20x20 at (638,179) imagePath /assets/figmaimages/figma_image_13_61.svg – main FB glyph; position within: left: 2; top: 2
+     - Vector (id 13:62) 24x24 at (636,177) style_27 opacity 0 – ignored/transparent.
+
+6) Big Button (id 54:668) (Sign In CTA)
+- dims: (456, 50, 315, 60) => left: 30; top: 480
+- layout: horizontal (display flex row), style_ref: style_11 (bg var(--color-129575), radius 10)
+- Children:
+  a) label text at (541,68,114,24) => relative left: 85; top: 18. Use absolute to place within container precisely; typography_ref typo_58 (Poppins 16/24 weight 600 color var(--color-ffffff)).
+     Text: "Sign In"
+  b) Icon/General/Arrow-Right component at (666,70,20,20) => relative left: 210; top: 20
+     children:
+       - Rectangle 1 (20x20) style_12 (opacity 0) invisible
+       - Union (boolean_operation) at (669.3333,74.1665) relative left: 3.3333; top: 24.1665-70=4.1665; contains strokes as icons; no image assets; draw as a placeholder div cannot show vector path; but overall icon has an imagePath at component level: /assets/figmaimages/figma_image_54_668_53_625_ee410d62.svg
+     So render one <img> for the component using imagePath at 20x20 positioned precisely inside the button.
+
+7) Forgot Password (id 12:91)
+- dims: (466, 8, 97,17) => left: 40; top: 438
+- text: "Forgot Password?" typography_ref: typo_62 (Poppins 11/16.5 center, color var(--color-ff9c00)) – We'll left-align due to position; color orange.
+
+8) Bottom Home Indicator (id 42:614)
+- dims: (426, 348, 375,34) => left: 0; top: 778
+- child Line (rectangle) dims: (546,369,135,5) => relative left: 120; top: 21; style_ref: style_32 (bg var(--color-121212), radius 100)
+
+9) Status Bar (id 13:71)
+- dims: (426, -430, 375,44) => left:0; top:0
+- sub-elements: battery, wifi, time etc; multiple icons with imagePaths; we will render:
+  - Battery paths: imagePaths present for two icons:
+    - I13:71;128:306 at (763,-411.8399) => left 763-426=337; top -411.8399+430=18.1600
+    - I13:71;128:307 at (762,-412.8399) => left 336; top 17.1600
+    - Rectangle fill (I13:71;128:309) with imagePath; dims at (764,-410.9233) => left 338; top 19.0767; size 18x7.6667
+  - Combined Shape bars (rectangles) (I13:71;128:311..314) with imagePaths at positions near x ~719.5..733.6 -> calculate lefts: 293.5..307.6; tops ~24.3..17.6
+  - Time text "19:27" at dims (455.5,-416,37,18) => left: 29.5; top: 14
+  - The rest paths with no imagePath will be omitted.
+
+10) "Don’t have an account? Sign up" (id 13:67)
+- dims: (525, 266, 177,17) => left: 99; top: 696
+- typography_ref: typo_63 (Poppins 11/16.5 weight 500 color var(--color-000000))
+
+Z-index:
+- Maintain stacking by element order. Later siblings get higher z-index incrementally.
+
+Assets usage:
+- Use figmaimages paths as "figmaimages/<filename>" (strip any leading "/assets/figmaimages/")
+- For provided imagePath entries:
+  - figma_image_13_39_ffad8cec.svg
+  - figma_image_13_42_83962b79.svg
+  - figma_image_13_61.svg
+  - figma_image_54_668_53_625_ee410d62.svg
+  - Multiple status bar svgs like:
+    - figma_image_13_71_128_306_b5e63c63.svg
+    - figma_image_13_71_128_307_97b3d1ff.svg
+    - figma_image_13_71_128_309_907fdba9.svg
+    - figma_image_13_71_128_311_74e08aed.svg
+    - figma_image_13_71_128_312_4153a623.svg
+    - figma_image_13_71_128_313_a9f566ce.svg
+    - figma_image_13_71_128_314_664f77c4.svg
+
+Typography variables used:
+- typo_60, typo_61, typo_62, typo_63, typo_64, typo_65, typo_66, typo_67, typo_58
+
+Style variables used:
+- style_10 (root), style_30 (input rectangle), style_11 (CTA), style_126 (social button container with shadow_0), style_28 (lines), style_32 (home indicator line)
+
+Layout summary:
+- Absolute positioning inside root (position: relative)
+- For flex designation on Big Button, we still use absolute children to match exact positions; set display:flex for semantics but preserve positions.
+
+Spacing:
+- Vertical spacing between title and first input: From title bottom ~ "Welcome Back!" bottom at y=139+30=169 to Email label top at 226 => gap 57px.
+- Between input rectangles: top of Email rect (252) bottom 252+55=307 to next label top 337 => 30px.
+- CTA top 480 vs previous block bottom ~ password rect bottom 363+55=418 -> 62px
+- Forgot Password at 438 (appears between password and CTA; 42px above CTA)
+
+End of observations.

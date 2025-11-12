@@ -1,0 +1,131 @@
+:root {
+  /* Colors (subset includes all needed and explicit hex entries) */
+  --color-ffffff: #ffffff;
+  --color-000000: #000000;
+  --color-121212: #121212;
+  --color-129575: #129575;
+  --color-d9d9d9: #d9d9d9;
+  --color-ff9c00: #ff9c00;
+  --color-303030: #303030;
+  --color-4cd964: #4cd964;
+  --color-ffc107: #ffc107;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-035b81: #035b81;
+  --color-484848: #484848;
+  --color-a9a9a9: #a9a9a9;
+
+  /* Typography variables (for all referenced typo_* in this screen) */
+  --typo-58-family: "Poppins", sans-serif;
+  --typo-58-size: 16px;
+  --typo-58-weight: 600;
+  --typo-58-line-height: 24px;
+  --typo-58-letter-spacing: 0;
+  --typo-58-text-align: center;
+  --typo-58-color: var(--color-ffffff);
+
+  --typo-60-family: "Poppins", sans-serif;
+  --typo-60-size: 30px;
+  --typo-60-weight: 600;
+  --typo-60-line-height: 45px;
+  --typo-60-letter-spacing: 0;
+  --typo-60-text-align: left;
+  --typo-60-color: var(--color-000000);
+
+  --typo-61-family: "Poppins", sans-serif;
+  --typo-61-size: 20px;
+  --typo-61-weight: 400;
+  --typo-61-line-height: 30px;
+  --typo-61-letter-spacing: 0;
+  --typo-61-text-align: left;
+  --typo-61-color: var(--color-121212);
+
+  --typo-62-family: "Poppins", sans-serif;
+  --typo-62-size: 11px;
+  --typo-62-weight: 400;
+  --typo-62-line-height: 16.5px;
+  --typo-62-letter-spacing: 0;
+  --typo-62-text-align: center;
+  --typo-62-color: var(--color-ff9c00);
+
+  --typo-63-family: "Poppins", sans-serif;
+  --typo-63-size: 11px;
+  --typo-63-weight: 500;
+  --typo-63-line-height: 16.5px;
+  --typo-63-letter-spacing: 0;
+  --typo-63-text-align: left;
+  --typo-63-color: var(--color-000000);
+
+  --typo-64-family: "Poppins", sans-serif;
+  --typo-64-size: 11px;
+  --typo-64-weight: 500;
+  --typo-64-line-height: 16.5px;
+  --typo-64-letter-spacing: 0;
+  --typo-64-text-align: left;
+  --typo-64-color: var(--color-d9d9d9);
+
+  --typo-65-family: "Poppins", sans-serif;
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line-height: 16.5px;
+  --typo-65-letter-spacing: 0;
+  --typo-65-text-align: left;
+  --typo-65-color: var(--color-d9d9d9);
+
+  --typo-66-family: "Poppins", sans-serif;
+  --typo-66-size: 14px;
+  --typo-66-weight: 400;
+  --typo-66-line-height: 21px;
+  --typo-66-letter-spacing: 0;
+  --typo-66-text-align: left;
+  --typo-66-color: var(--color-121212);
+
+  --typo-67-family: "SF Pro Display", sans-serif;
+  --typo-67-size: 15px;
+  --typo-67-weight: 500;
+  --typo-67-line-height: 17.9004px;
+  --typo-67-letter-spacing: -0.165px;
+  --typo-67-text-align: left;
+  --typo-67-color: var(--color-303030);
+}
+
+/* Shadows from design system */
+:root {
+  --shadow-0: 0px 0px 5px 3px #696969;
+  --shadow-1: 0px 8px 25px 0px #202020;
+  --shadow-2: 0px 0px 8px 0px #6c6c6c;
+  --shadow-3: 0px 0px 20px 0px #000000;
+  --shadow-4: 0px 6.3119px 19.7248px 0px #202020;
+  --shadow-5: 0px 4px 4px 0px #000000;
+  --shadow-6: 0px 0px 14.5062px 0px #d90065;
+  --shadow-7: 0px 2px 10px 0px #000000;
+  --shadow-8: 0px 0px 2px 0px #000000;
+  --shadow-9: 0px 0px 10px 0px #000000;
+  --shadow-10: 0px 0px 30px 0px #000000;
+}
+
+/* Spacing tokens (generic) */
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* Generic resets */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--color-ffffff);
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Utility style mappings for this screen */
+.style-10 { background-color: var(--color-ffffff); border-radius: 30px; }
+.style-11 { background-color: var(--color-129575); border-radius: 10px; }
+.style-18-text { color: var(--color-121212); }
+.style-28-line { background-color: var(--color-d9d9d9); }
+.style-30 { border: 1.5px solid var(--color-d9d9d9); border-radius: 10px; background-color: transparent; }
+.style-32 { background-color: var(--color-121212); border-radius: 100px; }
+.style-126 { background-color: var(--color-ffffff); border-radius: 10px; box-shadow: var(--shadow-0); }

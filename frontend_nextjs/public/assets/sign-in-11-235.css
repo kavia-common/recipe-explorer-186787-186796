@@ -1,0 +1,149 @@
+@import url("./common.css");
+
+.screen {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  overflow: hidden;
+  background-color: var(--color-ffffff);
+  border-radius: 30px;
+}
+
+/* Title group */
+#el-13-110 { position: absolute; left: 30px; top: 94px; width: 155px; height: 75px; }
+#txt-12-29 {
+  position: absolute; left: 0px; top: 0px; width: 84px; height: 45px;
+  font-family: var(--typo-60-family); font-size: var(--typo-60-size); font-weight: var(--typo-60-weight);
+  line-height: var(--typo-60-line-height); letter-spacing: var(--typo-60-letter-spacing);
+  color: var(--typo-60-color); text-align: left;
+}
+#txt-12-30 {
+  position: absolute; left: 0px; top: 45px; width: 155px; height: 30px;
+  font-family: var(--typo-61-family); font-size: var(--typo-61-size); font-weight: var(--typo-61-weight);
+  line-height: var(--typo-61-line-height); letter-spacing: var(--typo-61-letter-spacing);
+  color: var(--typo-61-color); text-align: left;
+}
+
+/* Email field component */
+#cmp-30-585 { position: absolute; left: 30px; top: 226px; width: 315px; height: 81px; }
+#cmp-30-585-rect {
+  position: absolute; left: 0px; top: 26px; width: 315px; height: 55px;
+  border: 1.5px solid var(--color-d9d9d9); border-radius: 10px; background: transparent;
+}
+#cmp-30-585-ph {
+  position: absolute; left: 20px; top: 45px; width: 275px; height: 17px;
+  font-family: var(--typo-65-family); font-size: var(--typo-65-size); font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height); color: var(--typo-65-color);
+}
+#cmp-30-585-label {
+  position: absolute; left: 0px; top: 0px; width: 315px; height: 21px;
+  font-family: var(--typo-66-family); font-size: var(--typo-66-size); font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line-height); color: var(--typo-66-color);
+}
+
+/* Password field */
+#cmp-30-590 { position: absolute; left: 30px; top: 337px; width: 315px; height: 81px; }
+#cmp-30-590-rect {
+  position: absolute; left: 0px; top: 26px; width: 315px; height: 55px;
+  border: 1.5px solid var(--color-d9d9d9); border-radius: 10px; background: transparent;
+}
+#cmp-30-590-ph {
+  position: absolute; left: 20px; top: 45px; width: 295px; height: 17px;
+  font-family: var(--typo-65-family); font-size: var(--typo-65-size); font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height); color: var(--typo-65-color);
+}
+#cmp-30-590-label {
+  position: absolute; left: 0px; top: 0px; width: 315px; height: 21px;
+  font-family: var(--typo-66-family); font-size: var(--typo-66-size); font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line-height); color: var(--typo-66-color);
+}
+
+/* Forgot password */
+#grp-12-91 { position: absolute; left: 40px; top: 438px; width: 97px; height: 17px; }
+#txt-12-94 {
+  position: absolute; left: 0; top: 0; width: 97px; height: 17px;
+  font-family: var(--typo-62-family); font-size: var(--typo-62-size); font-weight: var(--typo-62-weight);
+  line-height: var(--typo-62-line-height); color: var(--typo-62-color); text-align: center;
+}
+
+/* Big CTA button */
+#btn-54-668 {
+  position: absolute; left: 30px; top: 480px; width: 315px; height: 60px;
+  background: var(--color-129575); border-radius: 10px; display: block;
+}
+#btn-54-668-label {
+  position: absolute; left: 85px; top: 18px; width: 114px; height: 24px;
+  font-family: var(--typo-58-family); font-size: var(--typo-58-size); font-weight: var(--typo-58-weight);
+  line-height: var(--typo-58-line-height); color: var(--typo-58-color); text-align: center;
+}
+#btn-54-668-icon {
+  position: absolute; left: 210px; top: 20px; width: 20px; height: 20px;
+}
+
+/* Divider line grouping: "Or Sign in With" */
+#line-12-139 { position: absolute; left: 90px; top: 560px; width: 195px; height: 17px; }
+#line-12-140 {
+  position: absolute; left: 0px; top: 9px; width: 50px; height: 1px; background: var(--color-d9d9d9);
+}
+#line-12-141 {
+  position: absolute; left: 145px; top: 9px; width: 50px; height: 1px; background: var(--color-d9d9d9);
+}
+#txt-12-142 {
+  position: absolute; left: 57px; top: 0px; width: 81px; height: 17px;
+  font-family: var(--typo-64-family); font-size: var(--typo-64-size); font-weight: var(--typo-64-weight);
+  line-height: var(--typo-64-line-height); color: var(--typo-64-color);
+}
+
+/* Social buttons */
+#btn-13-35 { position: absolute; left: 131px; top: 597px; width: 44px; height: 44px; }
+#btn-13-35-rect { position: absolute; left: 0; top: 0; width: 44px; height: 44px; background: var(--color-ffffff); border-radius: 10px; box-shadow: var(--shadow-0); }
+#btn-13-35-google { position: absolute; left: 10px; top: 10px; width: 24px; height: 24px; }
+#btn-13-35-google-svg1 { position: absolute; left: 2px; top: 2px; width: 20px; height: 20px; }
+#btn-13-35-google-svg4 { position: absolute; left: 12px; top: 10px; width: 10px; height: 9.4141px; }
+
+#btn-13-49 { position: absolute; left: 200px; top: 597px; width: 44px; height: 44px; }
+#btn-13-49-rect { position: absolute; left: 0; top: 0; width: 44px; height: 44px; background: var(--color-ffffff); border-radius: 10px; box-shadow: var(--shadow-0); }
+#btn-13-49-fb { position: absolute; left: 10px; top: 10px; width: 24px; height: 24px; }
+#btn-13-49-fb-icon { position: absolute; left: 2px; top: 2px; width: 20px; height: 20px; }
+
+/* Bottom copy link text */
+#txt-13-67 {
+  position: absolute; left: 99px; top: 696px; width: 177px; height: 17px;
+  font-family: var(--typo-63-family); font-size: var(--typo-63-size); font-weight: var(--typo-63-weight);
+  line-height: var(--typo-63-line-height); color: var(--typo-63-color);
+}
+
+/* Home indicator component */
+#cmp-42-614 { position: absolute; left: 0px; top: 778px; width: 375px; height: 34px; }
+#cmp-42-614-line { position: absolute; left: 120px; top: 21px; width: 135px; height: 5px; background: var(--color-121212); border-radius: 100px; }
+
+/* Status bar */
+#cmp-13-71 { position: absolute; left: 0px; top: 0px; width: 375px; height: 44px; }
+#cmp-13-71-time {
+  position: absolute; left: 29.5px; top: 14px; width: 37px; height: 18px;
+  font-family: var(--typo-67-family); font-size: var(--typo-67-size); font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line-height); letter-spacing: var(--typo-67-letter-spacing);
+  color: var(--typo-67-color);
+}
+/* Battery related assets */
+#cmp-13-71-batt-306 { position: absolute; left: 337px; top: 18.16px; width: 20px; height: 9.5px; }
+#cmp-13-71-batt-307 { position: absolute; left: 336px; top: 17.16px; width: 22px; height: 11.5px; }
+#cmp-13-71-batt-309 { position: absolute; left: 338px; top: 19.0767px; width: 18px; height: 7.6667px; }
+/* Signal bars */
+#cmp-13-71-sig-311 { position: absolute; left: 293.5px; top: 24.3px; width: 3px; height: 4px; }
+#cmp-13-71-sig-312 { position: absolute; left: 298.3px; top: 22.3px; width: 3px; height: 6px; }
+#cmp-13-71-sig-313 { position: absolute; left: 302.9px; top: 20px; width: 3px; height: 8.3px; }
+#cmp-13-71-sig-314 { position: absolute; left: 307.6px; top: 17.6px; width: 3px; height: 10.7px; }
+
+/* Z-index stacking based on order */
+#cmp-13-71 { z-index: 1; }
+#el-13-110 { z-index: 2; }
+#cmp-30-585 { z-index: 3; }
+#cmp-30-590 { z-index: 4; }
+#grp-12-91 { z-index: 5; }
+#btn-54-668 { z-index: 6; }
+#line-12-139 { z-index: 7; }
+#btn-13-35 { z-index: 8; }
+#btn-13-49 { z-index: 9; }
+#txt-13-67 { z-index: 10; }
+#cmp-42-614 { z-index: 11; }
